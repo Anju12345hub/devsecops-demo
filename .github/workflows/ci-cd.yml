@@ -130,7 +130,7 @@ jobs:
         with:
           image-ref: ${{ env.REGISTRY }}/${{ steps.lower.outputs.image_name }} :sha-${{ github.sha }}
           format: 'table'
-          exit-code: '0'
+          exit-code: '1'
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH'
